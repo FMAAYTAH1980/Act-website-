@@ -659,6 +659,10 @@
 
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
+      if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+      }
       submitBtn.disabled = true;
       submitBtn.innerHTML = 'Submitting…';
       statusBox.classList.remove('show', 'error');
