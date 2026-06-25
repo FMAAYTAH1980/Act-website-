@@ -945,10 +945,11 @@ section { padding: clamp(4rem, 9vw, 9rem) 0; position: relative; }
   padding-left: clamp(1.25rem, 4vw, 3rem) !important;
   padding-right: clamp(1.25rem, 4vw, 3rem) !important;
 }
-/* === THESIS INDENT === */
-.prose,
-.page-header.container-narrow {
-  max-width: 760px;
-  margin-left: clamp(2rem, 12vw, 14rem);
-  margin-right: auto;
+/* === THESIS PULL LEFT === */
+.page-header.container-narrow,
+section.container-narrow {
+  max-width: 1000px !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  padding-left: clamp(1.5rem, 5vw, 4rem) !important;
 }
