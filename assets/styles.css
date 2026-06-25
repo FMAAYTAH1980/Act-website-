@@ -947,7 +947,7 @@ section { padding: clamp(4rem, 9vw, 9rem) 0; position: relative; }
 }
 /* === THESIS PROSE ALIGNMENT FIX === */
 .prose {
-  max-width: 720px;
+  max-width: 760px;
   margin-left: 0;
-  margin-right: auto;
+  margin-right: 0;
 }
