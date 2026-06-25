@@ -13,9 +13,12 @@
     .apply-intro { max-width: 760px; }
     .apply-intro p + p { margin-top: 1.25rem; }
 
-    .lab-section {
-      padding: clamp(3rem, 6vw, 5rem) 0;
+        .lab-section {
+      padding: clamp(3rem, 6vw, 5rem) clamp(1.25rem, 4vw, 3rem);
       border-top: 1px solid var(--hair);
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .lab-section:first-of-type { border-top: 0; }
 
@@ -271,7 +274,7 @@
 </nav>
 
 <!-- PAGE HEADER -->
-<header class="page-header container">
+<header class="page-header container" style="padding-left: clamp(1.25rem, 4vw, 3rem); padding-right: clamp(1.25rem, 4vw, 3rem);">
   <span class="eyebrow">Pitch Your AI Idea</span>
   <h1 class="display h1" style="max-width: 22ch;">
     Great ideas are everywhere. <span class="italic">Execution is rare.</span>
