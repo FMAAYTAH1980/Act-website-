@@ -939,7 +939,7 @@ section { padding: clamp(4rem, 9vw, 9rem) 0; position: relative; }
   padding-right: clamp(1.25rem, 4vw, 3rem);
 }
 .container-narrow {
-  max-width: 880px !important;
+  max-width: 1080px !important;
   margin-left: auto !important;
   margin-right: auto !important;
   padding-left: clamp(1.25rem, 4vw, 3rem) !important;
