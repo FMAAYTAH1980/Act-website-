@@ -953,3 +953,19 @@ section.container-narrow {
   margin-right: auto !important;
   padding-left: clamp(1.5rem, 5vw, 4rem) !important;
 }
+/* === APPLY PAGE GUTTER FIX === */
+.lab-section.container,
+.page-header.container {
+  padding-left: clamp(1.25rem, 4vw, 3rem) !important;
+  padding-right: clamp(1.25rem, 4vw, 3rem) !important;
+}
+.lab-section .form-grid,
+.lab-section .choice-group,
+.lab-section .form-section-header,
+.lab-section .sub-label,
+.lab-section .divider,
+.lab-section .lab-h2,
+.lab-section .lab-body {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
