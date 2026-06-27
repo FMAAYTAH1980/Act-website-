@@ -1236,3 +1236,24 @@ section.container-narrow {
   .founder-photo img { max-width: 220px; height: 260px; }
 }
 /* ===== END FOUNDER PHOTO ===== */
+
+/* ===== PITCH LINK IN MOBILE MENU ===== */
+.nav-links-cta { display: none; }
+@media (max-width: 860px) {
+  .nav-links.open .nav-links-cta {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .nav-links.open .nav-links-cta a {
+    background: var(--electric);
+    color: #fff !important;
+    padding: 0.85rem 1.75rem;
+    border-radius: 100px;
+    font-size: 1rem !important;
+    font-family: var(--sans) !important;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+/* ===== END PITCH LINK IN MOBILE MENU ===== */
+
