@@ -1269,10 +1269,14 @@ section.container-narrow {
 .nav-name {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 2rem;
   letter-spacing: 0.005em;
   color: var(--black);
   white-space: nowrap;
+  line-height: 1;
+}
+@media (max-width: 600px) {
+  .nav-name { font-size: 1.4rem; }
 }
 @media (max-width: 480px) {
   .nav-name { font-size: 1rem; }
