@@ -1128,3 +1128,45 @@ section.container-narrow {
   .vgrid { grid-template-columns: 1fr; }
 }
 /* ===== END BOLD VENTURE CARDS ===== */
+
+/* ===== BOLD CTA BAND ===== */
+.cta-block {
+  background: var(--electric);
+  color: #fff;
+  border-top: 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.cta-block::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(196,240,0,.25), transparent 55%);
+  pointer-events: none;
+}
+.cta-block > * { position: relative; z-index: 1; }
+.cta-block .h2 { color: #fff; margin-left: auto; margin-right: auto; }
+.cta-block .h2 .italic { color: var(--volt); }
+.cta-block .cta-row { justify-content: center; }
+.cta-block .btn-primary {
+  background: #fff;
+  color: var(--electric);
+  border-color: #fff;
+}
+.cta-block .btn-primary:hover {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+.cta-block .btn-ghost {
+  color: #fff;
+  border-color: rgba(255,255,255,.5);
+}
+.cta-block .btn-ghost:hover {
+  background: #fff;
+  color: var(--electric);
+  border-color: #fff;
+}
+/* ===== END BOLD CTA BAND ===== */
+
