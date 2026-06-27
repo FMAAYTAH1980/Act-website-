@@ -1238,7 +1238,10 @@ section.container-narrow {
 /* ===== END FOUNDER PHOTO ===== */
 
 /* ===== PITCH LINK IN MOBILE MENU ===== */
-.nav-links-cta { display: none; }
+.nav-links-cta { display: none !important; }
+@media (max-width: 860px) {
+  .nav-links.open .nav-links-cta { display: block !important; }
+}
 @media (max-width: 860px) {
   .nav-links.open .nav-links-cta {
     display: block;
