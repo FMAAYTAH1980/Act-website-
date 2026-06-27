@@ -1171,7 +1171,7 @@ section.container-narrow {
 /* ===== END BOLD CTA BAND ===== */
 
 /* ===== PORTFOLIO CARD ACCENTS ===== */
-.company-card.accent { padding-left: 2rem; }
+.company-card.accent { padding-left: 2rem; position: relative; }
 .company-card.accent::before {
   content: "";
   position: absolute;
