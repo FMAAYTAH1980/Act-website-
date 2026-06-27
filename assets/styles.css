@@ -1029,3 +1029,102 @@ section.container-narrow {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+/* ===== BOLD VENTURE CARDS ===== */
+.vgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.vcard {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2.2rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform .3s, box-shadow .3s;
+  border: 1px solid rgba(10,14,39,.06);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--ink);
+  display: block;
+}
+.vcard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px -20px rgba(10,14,39,.25);
+  opacity: 1;
+}
+.vcard .bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 5px;
+}
+.vcard.luuci .bar { background: var(--coral); }
+.vcard.one .bar { background: var(--volt); }
+.vcard.lab .bar { background: var(--electric); }
+.vnum {
+  font-family: var(--serif);
+  font-size: .8rem;
+  letter-spacing: .15em;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  display: inline-block;
+}
+.vcard.luuci .vnum { color: var(--coral); }
+.vcard.one .vnum { color: #8aa800; }
+.vcard.lab .vnum { color: var(--electric); }
+.vstage {
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  float: right;
+}
+.vname {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.9rem;
+  letter-spacing: -.01em;
+  margin-bottom: .4rem;
+}
+.vrole {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+.vtag {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+.vcard.luuci .vtag { color: var(--coral); }
+.vcard.one .vtag { color: #7a9600; }
+.vcard.lab .vtag { color: var(--electric); }
+.vdesc {
+  font-size: .95rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.chip {
+  font-size: .72rem;
+  font-weight: 500;
+  padding: .35rem .8rem;
+  border-radius: 100px;
+  background: var(--cloud);
+  color: var(--ink);
+}
+.vcard.luuci:hover { background: linear-gradient(180deg,#fff,#fff6f6); }
+.vcard.one:hover { background: linear-gradient(180deg,#fff,#fbffe8); }
+.vcard.lab:hover { background: linear-gradient(180deg,#fff,#f3f7ff); }
+@media (max-width: 900px) {
+  .vgrid { grid-template-columns: 1fr; }
+}
+/* ===== END BOLD VENTURE CARDS ===== */
