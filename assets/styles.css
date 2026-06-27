@@ -1216,21 +1216,23 @@ section.container-narrow {
 /* ===== END MOBILE MENU FIX ===== */
 /* ===== FOUNDER PHOTO ===== */
 .founder-layout {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: clamp(2rem, 5vw, 3.5rem);
-  align-items: start;
+  display: grid !important;
+  grid-template-columns: 260px 1fr !important;
+  gap: clamp(2rem, 5vw, 3.5rem) !important;
+  align-items: start !important;
+}
+.founder-photo {
+  position: relative;
 }
 .founder-photo img {
   width: 100%;
-  border-radius: 8px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
   display: block;
 }
 @media (max-width: 700px) {
-  .founder-layout { grid-template-columns: 1fr; }
-  .founder-photo img { max-width: 220px; }
+  .founder-layout { grid-template-columns: 1fr !important; }
+  .founder-photo img { max-width: 220px; height: 260px; }
 }
 /* ===== END FOUNDER PHOTO ===== */
-
-
-
