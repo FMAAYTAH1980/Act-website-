@@ -1170,3 +1170,29 @@ section.container-narrow {
 }
 /* ===== END BOLD CTA BAND ===== */
 
+/* ===== PORTFOLIO CARD ACCENTS ===== */
+.company-card.accent { padding-left: 2rem; }
+.company-card.accent::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: clamp(3rem, 6vw, 5rem);
+  bottom: clamp(3rem, 6vw, 5rem);
+  width: 5px;
+  border-radius: 4px;
+}
+.company-card.accent.luuci::before { background: var(--coral); }
+.company-card.accent.one::before { background: var(--volt); }
+.company-card.accent.lab::before { background: var(--electric); }
+.company-card.accent.luuci .num { color: var(--coral); }
+.company-card.accent.one .num { color: #8aa800; }
+.company-card.accent.lab .num { color: var(--electric); }
+.company-card.accent.luuci .company-tagline { color: var(--coral); }
+.company-card.accent.one .company-tagline { color: #7a9600; }
+.company-card.accent.lab .company-tagline { color: var(--electric); }
+@media (max-width: 860px) {
+  .company-card.accent { padding-left: 1.5rem; }
+}
+/* ===== END PORTFOLIO CARD ACCENTS ===== */
+
+
