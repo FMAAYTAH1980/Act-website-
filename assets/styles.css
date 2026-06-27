@@ -289,6 +289,24 @@ section { padding: clamp(4rem, 9vw, 9rem) 0; position: relative; }
 
 /* ===== MARQUEE / TICKER ===== */
 
+/* ===== BOLD TICKER ===== */
+.ticker {
+  background: var(--ink);
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+}
+.ticker-item {
+  color: var(--volt);
+  font-style: italic;
+  font-weight: 500;
+}
+.ticker-item::after {
+  content: '✦';
+  color: var(--electric);
+  font-style: normal;
+}
+/* ===== END BOLD TICKER ===== */
+
 .ticker {
   border-top: 1px solid var(--black);
   border-bottom: 1px solid var(--black);
