@@ -1214,6 +1214,23 @@ section.container-narrow {
   .nav-links.open a { color: #fff !important; font-size: 1.5rem; font-family: var(--serif); }
 }
 /* ===== END MOBILE MENU FIX ===== */
+/* ===== FOUNDER PHOTO ===== */
+.founder-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: start;
+}
+.founder-photo img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+@media (max-width: 700px) {
+  .founder-layout { grid-template-columns: 1fr; }
+  .founder-photo img { max-width: 220px; }
+}
+/* ===== END FOUNDER PHOTO ===== */
 
 
 
