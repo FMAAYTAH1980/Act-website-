@@ -19,6 +19,12 @@
   --act-blue: #006DFF;
   --act-blue-dark: #0055CC;
   --act-blue-soft: rgba(0, 109, 255, 0.08);
+     /* ===== BOLD REDESIGN PALETTE (added 2026) ===== */
+  --electric: #0052FF;
+  --coral: #FF5A5F;
+  --volt: #C4F000;
+  --ink: #0A0E27;
+  --cloud: #F4F6FB;
 
   --serif: 'Fraunces', 'Times New Roman', Georgia, serif;
   --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
