@@ -1197,4 +1197,29 @@ section.container-narrow {
 }
 /* ===== END PORTFOLIO CARD ACCENTS ===== */
 
+/* ===== MOBILE MENU FIX ===== */
+@media (max-width: 860px) {
+  .nav-links.open {
+    display: flex !important;
+    position: fixed !important;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--ink) !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.75rem;
+    padding: 6rem 2rem 3rem;
+    z-index: 9999 !important;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-links.open a {
+    color: #fff !important;
+    font-size: 1.4rem;
+    font-family: var(--serif);
+  }
+}
+/* ===== END MOBILE MENU FIX ===== */
+
+
 
