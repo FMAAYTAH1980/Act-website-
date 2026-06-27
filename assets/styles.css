@@ -1266,30 +1266,16 @@ section.container-narrow {
   align-items: center;
   gap: 0.7rem;
 }
-/* ===== NAV COMPANY NAME ===== */
-.nav-logo {
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.7rem !important;
-}
 .nav-name {
-  font-family: var(--serif) !important;
-  font-weight: 500 !important;
-  font-size: 2rem !important;
-  letter-spacing: 0.005em !important;
-  color: var(--black) !important;
-  white-space: nowrap !important;
-  line-height: 1 !important;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.005em;
+  color: var(--black);
+  white-space: nowrap;
+  line-height: 1;
 }
-@media (max-width: 600px) {
-  .nav-name { font-size: 1.4rem !important; }
-}
-/* ===== END NAV COMPANY NAME ===== */
 @media (max-width: 600px) {
   .nav-name { font-size: 1.4rem; }
 }
-@media (max-width: 480px) {
-  .nav-name { font-size: 1rem; }
-}
 /* ===== END NAV COMPANY NAME ===== */
-
