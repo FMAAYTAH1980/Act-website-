@@ -1260,3 +1260,22 @@ section.container-narrow {
 }
 /* ===== END PITCH LINK IN MOBILE MENU ===== */
 
+/* ===== NAV COMPANY NAME ===== */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.nav-name {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+  color: var(--black);
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .nav-name { font-size: 1rem; }
+}
+/* ===== END NAV COMPANY NAME ===== */
+
